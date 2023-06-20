@@ -1,18 +1,17 @@
-nav {
-  display: flex;
+/* Background and Grid */
+
+html, body {
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
 }
 
-nav a {
-  text-decoration: none;
-  padding: 7px 15px;
-  margin: 4px;
-  border: 1px solid black;
-  border-radius: 6px;
-  background-color: #0f0f0f;
-  color: white;
+body {
+  background: #0E131A;
+  display: grid;
+  grid-template-columns: repeat(26, 1fr);
+  grid-template-rows: repeat(26, 1fr);
+  grid-gap: 32px;
+  margin: 32px;
 }
 
-nav a:hover{
-  color: #0f0f0f;
-  background-color: white;
-}
+/* NavBar */

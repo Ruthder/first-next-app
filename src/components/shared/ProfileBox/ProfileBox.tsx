@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 import './styles.css'
 
-function ProfileBar() {
+function ProfileBox() {
   return (
     <div>
       <Image 
         src='/images/Profile.jpg' 
-        className='profileBarImage'
+        className='ProfileBoxImage'
         width={150} 
         height={150} 
         alt={''}
@@ -17,4 +17,4 @@ function ProfileBar() {
   )
 }
 
-export default ProfileBar
+export default ProfileBox

@@ -1,6 +1,6 @@
-import Sidebar from '@/components/SideBar/Sidebar'
+import Sidebar from '@/components/shared/SideBar/Sidebar'
 import '../styles/styles.css'
-import ProfileBar from '@/components/NavBar/ProfileBar'
+import Box from '@/components/shared/Box/Box'
 
 export const metadata = {
   title: 'Next.js',
@@ -15,8 +15,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ProfileBar/>
-        <Sidebar/>
+        <Box rows={[1,19]} columns={[1,2]}>
+          <Sidebar/>
+        </Box>
+        <Box rows={[19,27]} columns={[1,2]}>
+          
+        </Box>
+        <Box rows={[1,4]} columns={[2,17]}>
+          
+        </Box>
+        <Box rows={[1,4]} columns={[17,19]}>
+          
+        </Box>
+        <Box rows={[1,4]} columns={[19,21]}>
+          
+        </Box>
+        <Box rows={[1,23]} columns={[21,27]}>
+          
+        </Box>
+        <Box rows={[23,27]} columns={[21,27]}>
+          
+        </Box>
         {children}
       </body>
     </html>
